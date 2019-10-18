@@ -1,4 +1,36 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <% @offers.each_with_index do |photo, n| %>
+      <li data-target='#myCarousel' data-slide-to="#{n}" class="#{'active' if n == 0}"></li>
+    <% end %>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active row">
+      <%= inline_svg(@offers.first.activity_image, options={class: "col-4", size: "100px*100px"}) %>
+      <%= render partial: "offers/offer_slide", locals: { offer: @offers.first } %>
+    </div>
+    <% @offers.drop(1).each do |offer| %>
+       <div class="carousel-item row">
+         <%= inline_svg(offer.activity_image, options={class: "col-4", size: "100px*100px"}) %>
+         <%= render partial: "offers/offer_slide", locals: { offer: offer } %>
+       </div>
+    <% end %>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+	    <% @offers.each do |offer| %>
+	      <%= render partial: "offers/offer_card", locals: { offer: offer } %>
+	    <% end %>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+ActivityType.create(name: "Surf")
+ActivityType.create(name: "Bike")
+ActivityType.create(name: "Climb")
+
+password = BCrypt::Password.create("password")
+
+Outlet.create(name: "Cornwall Surf Centre", email: "corn@email.com", phonenumber: "1234567890", latitude: 50.8266, longitude: 4.5437, password_digest: password)
+Outlet.create(name: "Activity Place", email: "place@email.com", phonenumber: "1234567890", latitude: 50.8266, longitude: 4.5437, password_digest: password)
+User.create!(username: 'Tim', email: 'tim@email.com', password_digest: password)
+User.create!(username: 'Dan', email: 'dom@email.com', password_digest: password)
+
+Offer.create(name: "Beginner Surfing Lesson", description: "The ideal class to start your surfing career!", price: 24.99, activity_type_id: 1, outlet_id: 1)
+Offer.create(name: "Advanced Surfing Sesh", description: "You're good, but you could still be better, surf with our best instructors!", price: 19.99, activity_type_id: 1, outlet_id: 1)
+Offer.create(name: "Intermediate Surfing", description: "Want to start getting on some bigger waves? This is the course for you!", price: 19.99, activity_type_id: 1, outlet_id: 1)
+Offer.create(name: "Biking is the Best", description: "Let's get on a bike and go as fast as possible donwhill!", price: 44.99, activity_type_id: 2, outlet_id: 2)
+Offer.create(name: "Climb Crags", description: "Want to be higher than you currently are? This is the offer for you.", price: 23.99, activity_type_id: 3, outlet_id: 2)
+Offer.create(name: "Extreme Downhill", description: "This is the fastest offer available, only for the strong willed!", price: 44.99, activity_type_id: 2, outlet_id: 2)
