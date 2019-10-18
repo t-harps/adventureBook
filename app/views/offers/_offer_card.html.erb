@@ -5,6 +5,7 @@
       <p class="card-text"><%= offer.description %></p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
+          <%= inline_svg(offer.activity_image, options={class: "col-4", size: "40px*40px"}) %>
           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
         </div>
