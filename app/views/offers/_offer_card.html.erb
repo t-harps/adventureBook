@@ -1,7 +1,7 @@
-<div class="col-md-4">
+<div class="col-md-4 <%= offer.activity_type.name %>">
   <div class="card mb-4 shadow-sm">
     <div class="card-body">
-      <h5 class="card-title"><%= inline_svg(offer.activity_image, options={class: "offer-icon", size: "30px*30px"}) %><%= offer.name %></h5>
+      <h5 class="card-title"><%= inline_svg(offer.activity_type.image, options={class: "offer-icon", size: "30px*30px"}) %><%= offer.name %></h5>
       <p class="card-text"><%= offer.description %></p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">

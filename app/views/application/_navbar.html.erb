@@ -1,9 +1,11 @@
-<div class="navbar navbar-dark bg-dark shadow-sm">
+<div class="navbar">
   <div class="container d-flex justify-content-between">
     <a href="#" class="navbar-brand d-flex align-items-center">
       <%= inline_svg("surfer-icon.svg", options={ size: "40px*40px", class: "logo" }) %>
       <strong>AdventureBook</strong>
     </a>
-    <a href="/users/new" class="navbar-brand d-flex align-items-center">Sign up</a>
+    <% if !@user %>
+      <a href="/users/new" class="navbar-brand d-flex align-items-center">Sign up</a>
+    <% end %>
   </div>
 </div>

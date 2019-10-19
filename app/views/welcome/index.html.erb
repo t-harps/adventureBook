@@ -6,12 +6,12 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active row">
-      <%= inline_svg(@offers.first.activity_image, options={class: "col-4", size: "100px*100px"}) %>
+      <%= inline_svg(@offers.first.activity_type.image, options={class: "col-4", size: "100px*100px"}) %>
       <%= render partial: "offers/offer_slide", locals: { offer: @offers.first } %>
     </div>
     <% @offers.limit(3).drop(1).each do |offer| %>
        <div class="carousel-item row">
-         <%= inline_svg(offer.activity_image, options={class: "col-4", size: "100px*100px"}) %>
+         <%= inline_svg(offer.activity_type.image, options={class: "col-4", size: "100px*100px"}) %>
          <%= render partial: "offers/offer_slide", locals: { offer: offer } %>
        </div>
     <% end %>
@@ -28,10 +28,15 @@
 
 <div class="bg-light">
   <div class="row cards">
-    <div class="offers row col-10">
-	    <% @offers.each do |offer| %>
-	      <%= render partial: "offers/offer_card", locals: { offer: offer } %>
-	    <% end %>
+    <div class="offers col-10">
+      <div class="filters">
+        <%= react_component("TypeFilters") %>
+      </div>
+      <div class="offer_cards row">
+  	    <% @offers.each do |offer| %>
+  	      <%= render partial: "offers/offer_card", locals: { offer: offer } %>
+  	    <% end %>
+      </div>
     </div>
     <div class="outlets col-2">
       <div class="outlets-title">

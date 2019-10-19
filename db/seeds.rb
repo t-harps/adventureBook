@@ -16,6 +16,12 @@ Offer.create(name: "Intermediate Surfing", description: "Want to start getting o
 Offer.create(name: "Biking is the Best", description: "Let's get on a bike and go as fast as possible downhill!", price: 44.99, activity_type_id: 2, outlet_id: 2)
 Offer.create(name: "Climb Crags", description: "Want to be higher than you currently are? This is the offer for you.", price: 23.99, activity_type_id: 3, outlet_id: 2)
 Offer.create(name: "Extreme Downhill", description: "This is the fastest offer available, only for the strong willed!", price: 44.99, activity_type_id: 2, outlet_id: 2)
+Offer.create(name: "Bike", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 2, outlet_id: 2)
+Offer.create(name: "Surf", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 1, outlet_id: 1)
+Offer.create(name: "Climb", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 3, outlet_id: 3)
+Offer.create(name: "Ride a bike", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 2, outlet_id: 2)
+Offer.create(name: "Climb a mountain", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 3, outlet_id: 1)
+Offer.create(name: "Surf a wave", description: "Copy this is copy this is some more copy and finally here's some more copy just to round it out!", price: 44.99, activity_type_id: 1, outlet_id: 3)
 
 Session.create(offer_id: 1, date: DateTime.new(2019,9,30,10,30), spaces: 10)
 Session.create(offer_id: 1, date: DateTime.new(2019,9,25,10,0), spaces: 10)

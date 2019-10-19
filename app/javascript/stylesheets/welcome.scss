@@ -1,6 +1,7 @@
 .carousel {
 	padding: 40px 80px;
-	background-color: darkgrey;
+	background-image: url("../../assets/images/mountains.jpg");
+  background-size: 2000px 400px;
 }
 
 .carousel-item.active,
@@ -19,11 +20,9 @@
 }
 
 .outlets {
-    position: absolute !important;
+  position: absolute !important;
 	right: 0;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-	background-color: lightgrey;
-	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	padding: 10px;
 	border-top: 0;
@@ -42,14 +41,44 @@
 }
 
 .outlets-title {
-	align-self: center;
+margin-bottom: 20px;
 }
 
 .offers {
 	padding-bottom: 3rem;
-	padding-top: 3rem;
+	padding-top: 5rem;
 }
 
 .location {
 	cursor: pointer;
 }
+
+.filters {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    top: 5%;
+    margin-top: -40px;
+}
+
+.type-selector {
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.type-selector:hover, .type-selector.active, {
+  text-shadow: 0.3px 0.3px black;
+}
+
+.filters .middle {
+  border-left: double;
+  border-right: double;
+}
+
