@@ -6,6 +6,7 @@ password = BCrypt::Password.create("password")
 
 Outlet.create(name: "Cornwall Surf Centre", email: "corn@email.com", phonenumber: "1234567890", latitude: 50.8266, longitude: 4.5437, password_digest: password)
 Outlet.create(name: "Activity Place", email: "place@email.com", phonenumber: "1234567890", latitude: 50.8266, longitude: 4.5437, password_digest: password)
+Outlet.create(name: "Radness Maximise", email: "max@email.com", phonenumber: "1234567890", latitude: 50.8266, longitude: 4.5437, password_digest: password)
 User.create!(username: 'Tim', email: 'tim@email.com', password_digest: password)
 User.create!(username: 'Dan', email: 'dom@email.com', password_digest: password)
 
