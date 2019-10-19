@@ -1,11 +1,11 @@
 <div class="col-md-4">
   <div class="card mb-4 shadow-sm">
     <div class="card-body">
-      <h5 class="card-title"><%= offer.name %></h5>
+      <h5 class="card-title"><%= inline_svg(offer.activity_image, options={class: "offer-icon", size: "30px*30px"}) %><%= offer.name %></h5>
       <p class="card-text"><%= offer.description %></p>
       <div class="d-flex justify-content-between align-items-center">
         <div class="btn-group">
-          <%= inline_svg(offer.activity_image, options={class: "col-4", size: "40px*40px"}) %>
+          <%= inline_svg("location.svg", options={class: "col-4 location", size: "30px*30px"}) %>
           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
           <button type="button" class="btn btn-sm btn-outline-secondary">Save</button>
         </div>

@@ -14,6 +14,10 @@
 	position: relative;
 }
 
+.offer-icon {
+	margin-right: 1rem;
+}
+
 .outlets {
     position: absolute !important;
 	right: 0;
@@ -39,10 +43,13 @@
 
 .outlets-title {
 	align-self: center;
-	float: right;
 }
 
 .offers {
 	padding-bottom: 3rem;
 	padding-top: 3rem;
+}
+
+.location {
+	cursor: pointer;
 }

@@ -1,4 +1,5 @@
 <div class="outlet">
-  <h5><%= outlet.name %></h5>
-  <button type="button" class="btn btn-sm btn-outline-secondary right">View</button>
+  <h5 class="location"><%= inline_svg("location.svg", options={size: "30px*30px"}) %><%= outlet.name %></h5>
+  <p>Email: <%= outlet.email %></p>
+  <p>Phone: <%= outlet.phonenumber %></p>
 </div>
