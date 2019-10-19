@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offer: one
+  date: 2019-10-18 16:44:42
+  spaces: 1
+
+two:
+  offer: two
+  date: 2019-10-18 16:44:42
+  spaces: 1

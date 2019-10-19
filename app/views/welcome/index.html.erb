@@ -1,6 +1,6 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <% @offers.each_with_index do |photo, n| %>
+    <% @offers.limit(3).each_with_index do |photo, n| %>
       <li data-target='#myCarousel' data-slide-to="#{n}" class="#{'active' if n == 0}"></li>
     <% end %>
   </ol>
@@ -9,7 +9,7 @@
       <%= inline_svg(@offers.first.activity_image, options={class: "col-4", size: "100px*100px"}) %>
       <%= render partial: "offers/offer_slide", locals: { offer: @offers.first } %>
     </div>
-    <% @offers.drop(1).each do |offer| %>
+    <% @offers.limit(3).drop(1).each do |offer| %>
        <div class="carousel-item row">
          <%= inline_svg(offer.activity_image, options={class: "col-4", size: "100px*100px"}) %>
          <%= render partial: "offers/offer_slide", locals: { offer: offer } %>
