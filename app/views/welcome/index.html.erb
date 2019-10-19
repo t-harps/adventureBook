@@ -25,12 +25,21 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="py-5 bg-light">
-  <div class="container">
-    <div class="row">
+
+<div class="bg-light">
+  <div class="row cards">
+    <div class="offers row col-10">
 	    <% @offers.each do |offer| %>
 	      <%= render partial: "offers/offer_card", locals: { offer: offer } %>
 	    <% end %>
+    </div>
+    <div class="outlets row col-2">
+      <div class="outlets-title">
+        <h3>Outlets</h3>
+      </div>
+      <% @outlets.each do |outlet| %>
+        <%= render partial: "outlets/outlet_card", locals: { outlet: outlet } %>
+      <% end %>
     </div>
   </div>
 </div>
