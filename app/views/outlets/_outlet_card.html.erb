@@ -1,5 +1,9 @@
 <div class="outlet">
-  <h5 class="location"><%= inline_svg("location.svg", options={size: "30px*30px"}) %><%= outlet.name %></h5>
-  <p>Email: <%= outlet.email %></p>
-  <p>Phone: <%= outlet.phonenumber %></p>
+  <h5 class="location"><%= outlet.name %></h5>
+  <div class="info">
+    <span><%= inline_svg("email.svg", options={size: "20px*20px"}) %></span><p><%= outlet.email %></p>
+  </div>
+  <div class="info">
+    <span><%= inline_svg("phone.svg", options={size: "20px*20px"}) %></span><p><%= outlet.phonenumber %></p>
+  </div>
 </div>

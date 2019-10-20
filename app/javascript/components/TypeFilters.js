@@ -38,6 +38,4 @@ class TypeFilters extends React.Component {
 	}
 }
 
-TypeFilters.propTypes = {
-};
 export default TypeFilters

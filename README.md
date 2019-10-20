@@ -1,25 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Activity booking website landing page with tailored recommendations for Users who have made a booking before. If a User has made a booking then offers are ordered by their preferred Activity Type.
 
-Things you may want to cover:
+Front end uses html with embedded ruby and bootstrap styling. The activity type filter is written in React.
 
-* Ruby version
+* Ruby version - '2.6.3'
 
-* System dependencies
+* Stack - Ruby on Rails, Html, Sass, Javscript, Jquery, React, SQL, Heroku, Yarn
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # adventureBook

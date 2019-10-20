@@ -6,8 +6,8 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active row">
-      <%= inline_svg(@first.activity_type.image, options={class: "col-4", size: "100px*100px"}) %>
-      <%= render partial: "offers/offer_slide", locals: { offer: @first } %>
+      <%= inline_svg(@first_offer.activity_type.image, options={class: "col-4", size: "100px*100px"}) %>
+      <%= render partial: "offers/offer_slide", locals: { offer: @first_offer } %>
     </div>
     <% @offers.limit(3).drop(1).each do |offer| %>
        <div class="carousel-item row">

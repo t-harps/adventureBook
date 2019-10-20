@@ -22,26 +22,20 @@
 .outlets {
   position: absolute !important;
 	right: 0;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 	border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: white;
 	padding: 10px;
 	border-top: 0;
-	height: 100%;
-	border-bottom: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .outlet {
 	padding: 5px;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-	background-color: #f8f9fa;
-	background-clip: border-box;
-	border: 1px solid rgba(0, 0, 0, 0.125);
-	width: 100%;
-	border-radius: 0.25rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .outlets-title {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .offers {
@@ -80,5 +74,12 @@ margin-bottom: 20px;
 .filters .middle {
   border-left: double;
   border-right: double;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 20px;
 }
 
