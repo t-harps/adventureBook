@@ -20,6 +20,6 @@ Each **Outlet** can have several **Offers**. Each **Offer** has one **Activity T
 	3. bundle
 	4. yarn
 	5. rake db:setup
-	6.w rails s
+	6. rails s
 
 # adventureBook
