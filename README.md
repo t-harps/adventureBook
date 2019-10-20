@@ -12,4 +12,14 @@ Each **Outlet** can have several **Offers**. Each **Offer** has one **Activity T
 
 * Stack - Ruby on Rails, Html, Sass, Javscript, Jquery, React, SQL, Heroku, Yarn
 
+* **https://ad-venture-book.herokuapp.com/**
+
+* Installation
+- git clone git@github.com:t-harps/adventureBook.git
+- cd adventurebook
+- bundle
+- yarn
+- rake db:setup
+- rails s
+
 # adventureBook
